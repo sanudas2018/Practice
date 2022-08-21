@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bubble</title>
+   <style>
+      li {
+         padding: 5px;
+         background-color: rgb(85, 121, 217);
+         color: white;
+         margin-top: 3px;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Exploring Event Bubble</h1>
+   <section id="section">
+      <ul id="list-ul">
+         <li class="item">item-1</li>
+         <li class="item">item-2</li>
+         <li class="item">item-3</li>
+         <li class="item">item-4</li>
+         <li class="item">item-5</li>
+      </ul>
+      <button id="addItem">Add Item</button>
+   </section>
+
+   <script>
+      // ............... 
+      document.getElementById('addItem').addEventListener('click', function (e) {
+         let createElement = document.createElement('li');
+         createElement.innerText = 'New Item';
+         createElement.classList.add('item');
+
+         let parentDiv = document.getElementById('list-ul');
+         parentDiv.appendChild(createElement);
+
+      });
+      document.getElementById('list-ul').addEventListener('click', function (e) {
+         console.log(e.target.parentNode)
+         e.target.parentNode.removeChild(e.target);
+      });
+
+      // ............... 
+
+      // document.getElementById('item-2').addEventListener('click', function (event) {
+      //    // console.log(event.target.parentNode);
+      //    // event.stopPropagation();
+      //    // event.stopImmediatePropagation();
+
+      // });
+      // document.getElementById('list-ul').addEventListener('click', function () {
+      //    console.log('list-ul');
+      // });
+      // document.getElementById('section').addEventListener('click', function () {
+      //    console.log('section');
+      // });
+   </script>
+   <script src="./bubble.js"></script>
+</body>
+
+</html>

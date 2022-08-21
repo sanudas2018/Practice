@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bank</title>
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900">
+   <div class="container mx-auto bg-slate-200 w-3/4 px-8 overflow-hidden pb-10 mt-20">
+      <div class="header mx-auto w-2/4 bg-blue-300 text-center p-3 mt-5 rounded-lg">
+         <h1 class="font-bold text-3xl text-sky-500">Bank Account</h1>
+      </div>
+      <div class="main grid grid-cols-3 gap-4 mt-5">
+         <div class="box-1 bg-teal-500 h-48 rounded-lg ">
+            <h1 class="font-semibold text-3xl text-center mb-5 text-stone-300 mt-3">Deposit</h1>
+            <div class="flex justify-center content-center items-center">
+               <h2 class="font-bold text-6xl text-stone-50">$<span id="depositAmount">00</span></h2>
+            </div>
+         </div>
+         <div class="box-1 bg-teal-500 h-48 rounded-lg ">
+            <h1 class="font-semibold text-3xl text-center mb-5 text-stone-300 mt-3">Withdraw</h1>
+            <div class="flex justify-center content-center items-center">
+               <h2 class="font-bold text-6xl text-stone-50">$<span id="withdrawAmount">00</span></h2>
+            </div>
+         </div>
+         <div class="box-1 bg-teal-500 h-48 rounded-lg ">
+            <h1 class="font-semibold text-3xl text-center mb-5 text-stone-300 mt-3">Balance</h1>
+            <div class="flex justify-center content-center items-center">
+               <h2 class="font-bold text-6xl text-stone-50">$<span id="balance">1000</span></h2>
+            </div>
+         </div>
+      </div>
+      <!-- deposit and withdraw  -->
+      <div class="main2 grid grid-cols-2 gap-4 mt-5">
+         <div class="dipo bg-amber-200 h-48 flex justify-center items-center self-center content-center  rounded-lg">
+            <div class="">
+               <input id="deposit-input" class="h-9 w-64 rounded-lg px-3" type="text"
+                  placeholder="Amount you want to Deposit">
+               <button id="btn-deposit"
+                  class="bg-green-500 px-4 text-white font-bold py-2 rounded-3 rounded-lg ml-2 hover:bg-sky-700">Deposit</button>
+            </div>
+         </div>
+         <div class="dipo bg-green-500 h-48 rounded-lg">
+            <div class="dipo bg-red-300 h-48 flex justify-center items-center self-center content-center  rounded-lg">
+               <div class="">
+                  <input id="withdraw-input" class="h-9 w-64 rounded-lg px-3" type="text"
+                     placeholder="Amount you want to Withdraw">
+                  <button id="btn-withdraw"
+                     class="bg-red-500 px-4 text-white font-bold py-2 rounded-3 rounded-lg ml-2 hover:bg-sky-700">Withdraw</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+   </div>
+
+   <script src="./assets/js/fun-bank.js"></script>
+   <!-- <script src="./assets/js/jquery.js"></script> -->
+</body>
+
+</html>

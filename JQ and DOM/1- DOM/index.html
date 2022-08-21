@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM</title>
+   <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+   <!-- github delete button  -->
+   <section>
+      <p id="repoName">delete</p>
+      <input id="inputField" type="text" placeholder="You repo name">
+      <button id="deleteBtn" disabled>Delete</button>
+   </section>
+
+   <!-- post submit  -->
+   <h1>Post submit any one</h1>
+   <section id="postSection">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, incidunt. Est accusantium nam quasi iste
+         blanditiis, illum dolorem veniam tempore.</p>
+   </section>
+   <textarea name="post" id="post" cols="50" rows="10"></textarea>
+   <br>
+   <button id="postBtn">Post Submit</button>
+
+   <!-- input field with value received  -->
+   <h1>Input Field Value Received and show p tag</h1>
+   <p id="ptag">input field tumi amake kichu dou na keno</p>
+   <input id="inputtag" type="text" placeholder="kichu to lekhin">
+   <button id="button-submit">Submit Value</button>
+
+
+   <!-- // First work  -->
+   <!-- <h1>Start Practice</h1>
+   <ul>
+      <li>item-1</li>
+      <li>item-2</li>
+      <li>item-3</li>
+      <li>item-4</li>
+      <li>item-5</li>
+   </ul>
+   <section id="mobile-section">
+      <h1 class="mobile">Mobile section</h1>
+      <ul>
+         <li>Nokia-1</li>
+         <li>Apple-2</li>
+         <li>Nokia-3</li>
+         <li>Sony-4</li>
+         <li>Sumsung-5</li>
+      </ul>
+   </section> -->
+   <!-- first work  -->
+   <!-- second work  -->
+   <h1>Body Background color change</h1>
+   <button id="green">Green</button>
+   <button id="white">White</button>
+   <button id="cadetblue">Black</button>
+
+   <script>
+      // Second Work
+      document.getElementById('green').addEventListener('click', function () {
+         document.body.style.backgroundColor = 'green';
+      });
+      document.getElementById('white').addEventListener('click', function () {
+         document.body.style.backgroundColor = 'white';
+      })
+      document.getElementById('cadetblue').addEventListener('click', function () {
+         document.body.style.backgroundColor = 'cadetblue';
+      })
+
+      // Second Work
+      // First work 
+
+      // let section = document.getElementById('mobile-section');
+      // section.style.backgroundColor = 'orange';
+      // section.style.padding = '10px';
+      // section.style.borderRadius = '10px';
+      // let h3 = document.createElement('h3');
+      // h3.innerText = 'New h3 Element';
+      // h3.style.borderTop = '2px solid red';
+      // section.appendChild(h3);
+      // let ul = document.createElement('ul');
+      // ul.innerHTML = `
+      //    <li>Item - 1 </li>
+      //    <li>Item - 2 </li>
+      //    <li>Item - 3 </li>
+      //    <li>Item - 4 </li>
+      // `;
+      // section.appendChild(ul);
+
+
+      // first work 
+   </script>
+
+   <script src="./assets/js/script.js"></script>
+   <script src="./getInputfield.js"></script>
+   <script src="./post.js"></script>
+   <script src="./githubButton.js"></script>
+</body>
+
+</html>

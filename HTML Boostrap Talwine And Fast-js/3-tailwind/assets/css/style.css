@@ -1,0 +1,19 @@
+body{
+   background-color: rgba(122, 112, 112, 0.614);
+}
+.container{
+   width: 80%;
+   height: 600px;
+   border: 2px solid white;
+   margin: 0px auto;
+}
+.media{
+   width: 200px;
+   border: 1px solid rebeccapurple;
+}
+
+.short-text{
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
