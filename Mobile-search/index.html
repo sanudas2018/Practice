@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./Untitled-1.jpg" type="image/x-icon">
+   <title>Mobile Search</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-dark">
+
+   <div class="container">
+      <section>
+         <header class="border-bottom border-warning mb-2">
+            <h1 class="text-center mb-3 text-white">Mobile Phone Search</h1>
+            <div class="input-group mb-4">
+               <input type="text" class="form-control" placeholder="Please input your phone name"
+                  aria-label="Please input your phone name" aria-describedby="button-addon2" id="input-value">
+               <button class="btn btn-info fw-bold" type="button" id="button-addon2">Button</button>
+            </div>
+         </header>
+      </section>
+
+      <!-- ..........body card section......  -->
+      <section id="main-card-section">
+
+         <div id="cardMain" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Show all card  -->
+
+         </div>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" id="modal-body-id">
+
+               <!-- modal body  -->
+
+            </div>
+
+         </div>
+         <!-- spinner add  -->
+         <div class="spinner-border text-primary d-none" role="status" style="width:150px; height:150px" id="spinner">
+            <span class="visually-hidden">Loading...</span>
+         </div>
+
+         <!-- show More Button  -->
+
+         <div id="show-button" class="text-center mt-2 d-none">
+            <button id="btn-show-all" class="btn btn-warning ">Show More</button>
+         </div>
+
+      </section>
+
+      <!-- alert messages  -->
+      <section id="alert" class="d-none">
+
+      </section>
+
+
+
+   </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+   </script>
+   <script src="./js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+.container {
+   width: 100%;
+   margin: 0px auto;
+   background-color: rebeccapurple;
+}
+
+.slider {
+   width: 100%;
+   margin: 0px auto;
+}
+
+.slider img {
+   display: block;
+   margin: 0px auto;
+   width: 100%;
+   height: 60vh;
+
+}
